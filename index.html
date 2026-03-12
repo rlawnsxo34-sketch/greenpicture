@@ -40,9 +40,9 @@
     <!-- Header -->
     <header class="text-center mb-8 flex flex-col items-center">
         <!-- 메인 상단 로고 -->
-        <img src="50186.png" alt="국립장성숲체원 로고" class="h-12 mb-3 object-contain">
-        <h1 class="text-4xl font-black text-green-800 tracking-tight">그린 픽처 <span class="text-green-600">조합기</span></h1>
-        <p class="text-slate-600 mt-2 font-medium">우리 팀만의 숲속 문제 해결 스토리를 완성하세요.</p>
+        <img src="50186.png" alt="국립장성숲체원 로고" class="h-14 mb-3 object-contain">
+        <h1 class="text-5xl font-black text-green-800 tracking-tight">그린 픽처 <span class="text-green-600">조합기</span></h1>
+        <p class="text-slate-600 mt-3 text-lg font-medium">우리 팀만의 숲속 문제 해결 스토리를 완성하세요.</p>
     </header>
 
     <!-- Main Content Container -->
@@ -51,27 +51,27 @@
         <!-- STEP 1: 팀 이름 및 문제 카드 선택 -->
         <div id="step1" class="step-container step-active p-8">
             <div class="mb-8 text-center">
-                <span class="bg-red-100 text-red-700 text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wide">Step 1</span>
-                <h2 class="text-2xl font-bold mt-4">어떤 위기를 해결하시겠습니까?</h2>
+                <span class="bg-red-100 text-red-700 text-base font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">Step 1</span>
+                <h2 class="text-3xl font-bold mt-5">어떤 위기를 해결하시겠습니까?</h2>
                 
-                <div class="mt-6 max-w-md mx-auto">
-                    <label class="block text-left text-sm font-medium text-slate-700 mb-2">팀 이름 (또는 숲속 부캐)</label>
-                    <input type="text" id="teamName" placeholder="예: 행동파 다람쥐 팀" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none transition">
+                <div class="mt-8 max-w-md mx-auto">
+                    <label class="block text-left text-base font-bold text-slate-700 mb-2">팀 이름 (또는 숲속 부캐)</label>
+                    <input type="text" id="teamName" placeholder="예: 행동파 다람쥐 팀" class="w-full text-lg px-5 py-4 rounded-xl border-2 border-slate-300 focus:ring-4 focus:ring-red-200 focus:border-red-500 outline-none transition">
                 </div>
             </div>
 
-            <div class="mb-4 flex justify-between items-end">
-                <h3 class="text-lg font-bold text-slate-700"><i class="fa-solid fa-triangle-exclamation text-red-500 mr-2"></i>문제 카드 (1장 선택)</h3>
-                <span class="text-sm font-bold text-red-500" id="problemCounter">0 / 1 선택됨</span>
+            <div class="mb-5 flex justify-between items-end">
+                <h3 class="text-xl font-bold text-slate-700"><i class="fa-solid fa-triangle-exclamation text-red-500 mr-2"></i>문제 카드 (1장 선택)</h3>
+                <span class="text-base font-bold text-red-500" id="problemCounter">0 / 1 선택됨</span>
             </div>
 
             <!-- Problem Cards Grid -->
-            <div id="problemGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div id="problemGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
                 <!-- Javascript will inject cards here -->
             </div>
 
             <div class="text-center">
-                <button onclick="goToStep(2)" id="btnNext1" disabled class="bg-slate-300 text-slate-500 font-bold py-3 px-12 rounded-xl transition duration-200 cursor-not-allowed">
+                <button onclick="goToStep(2)" id="btnNext1" disabled class="bg-slate-300 text-slate-500 text-lg font-bold py-4 px-14 rounded-xl transition duration-200 cursor-not-allowed">
                     자원 선택하러 가기 <i class="fa-solid fa-arrow-right ml-2"></i>
                 </button>
             </div>
@@ -80,26 +80,26 @@
         <!-- STEP 2: 자원 카드 선택 -->
         <div id="step2" class="step-container p-8">
             <div class="mb-8 text-center">
-                <span class="bg-green-100 text-green-700 text-sm font-bold px-3 py-1 rounded-full uppercase tracking-wide">Step 2</span>
-                <h2 class="text-2xl font-bold mt-4">위기를 해결할 자원을 선택하세요.</h2>
-                <p class="text-slate-500 mt-2">부캐의 능력을 발휘할 수 있는 자원 카드 2장을 골라주세요.</p>
+                <span class="bg-green-100 text-green-700 text-base font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">Step 2</span>
+                <h2 class="text-3xl font-bold mt-5">위기를 해결할 자원을 선택하세요.</h2>
+                <p class="text-slate-500 text-lg mt-3">부캐의 능력을 발휘할 수 있는 자원 카드 2장을 골라주세요.</p>
             </div>
 
-            <div class="mb-4 flex justify-between items-end">
-                <h3 class="text-lg font-bold text-slate-700"><i class="fa-solid fa-leaf text-green-500 mr-2"></i>자원 카드 (2장 선택)</h3>
-                <span class="text-sm font-bold text-green-500" id="resourceCounter">0 / 2 선택됨</span>
+            <div class="mb-5 flex justify-between items-end">
+                <h3 class="text-xl font-bold text-slate-700"><i class="fa-solid fa-leaf text-green-500 mr-2"></i>자원 카드 (2장 선택)</h3>
+                <span class="text-base font-bold text-green-500" id="resourceCounter">0 / 2 선택됨</span>
             </div>
 
             <!-- Resource Cards Grid -->
-            <div id="resourceGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div id="resourceGrid" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
                 <!-- Javascript will inject cards here -->
             </div>
 
             <div class="flex justify-center gap-4">
-                <button onclick="goToStep(1)" class="bg-slate-100 text-slate-600 font-bold py-3 px-8 rounded-xl hover:bg-slate-200 transition">
+                <button onclick="goToStep(1)" class="bg-slate-100 text-slate-600 text-lg font-bold py-4 px-10 rounded-xl hover:bg-slate-200 transition">
                     <i class="fa-solid fa-arrow-left mr-2"></i> 뒤로
                 </button>
-                <button onclick="generateBoard()" id="btnNext2" disabled class="bg-slate-300 text-slate-500 font-bold py-3 px-12 rounded-xl transition duration-200 cursor-not-allowed">
+                <button onclick="generateBoard()" id="btnNext2" disabled class="bg-slate-300 text-slate-500 text-lg font-bold py-4 px-14 rounded-xl transition duration-200 cursor-not-allowed">
                     발표 보드 완성하기 <i class="fa-solid fa-wand-magic-sparkles ml-2"></i>
                 </button>
             </div>
@@ -110,69 +110,69 @@
             <!-- Downloadable Area -->
             <div id="presentation-board" class="p-10 bg-white relative">
                 <!-- 결과 보드 다운로드용 로고 -->
-                <img src="50186.png" alt="국립장성숲체원 로고" class="absolute top-6 right-8 h-8 md:h-10 object-contain">
+                <img src="50186.png" alt="국립장성숲체원 로고" class="absolute top-6 right-8 h-10 md:h-12 object-contain">
                 
-                <div class="text-center mb-10 pt-2">
-                    <h2 class="text-3xl font-black text-slate-800 mb-2">🌿 숲속 어벤져스의 빅픽처</h2>
-                    <p class="text-xl text-green-700 font-bold border-b-2 border-green-200 inline-block pb-1" id="displayTeamName">팀 이름</p>
+                <div class="text-center mb-10 pt-4">
+                    <h2 class="text-4xl font-black text-slate-800 mb-3">🌿 숲속 어벤져스의 빅픽처</h2>
+                    <p class="text-2xl text-green-700 font-bold border-b-4 border-green-200 inline-block pb-2" id="displayTeamName">팀 이름</p>
                 </div>
 
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8">
                     <!-- Selected Problem -->
                     <div class="w-full md:w-1/3 flex flex-col items-center">
-                        <div class="bg-red-50 border-t-8 border-red-500 rounded-2xl shadow-lg p-6 w-full h-64 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                        <div class="bg-red-50 border-t-8 border-red-500 rounded-2xl shadow-lg p-6 w-full h-72 flex flex-col items-center justify-center text-center relative overflow-hidden">
                             <div class="absolute -right-4 -bottom-4 opacity-10 text-red-500 text-9xl">
                                 <i id="resProbIconLg" class="fa-solid fa-triangle-exclamation"></i>
                             </div>
-                            <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">해결해야 할 위기</span>
-                            <i id="resProbIcon" class="fa-solid fa-fire text-5xl text-red-500 mb-4"></i>
-                            <h3 id="resProbTitle" class="text-2xl font-bold text-slate-800 mb-2">산불</h3>
-                            <p id="resProbDesc" class="text-slate-600 text-sm">설명</p>
+                            <span class="bg-red-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-5">해결해야 할 위기</span>
+                            <i id="resProbIcon" class="fa-solid fa-fire text-6xl text-red-500 mb-5"></i>
+                            <h3 id="resProbTitle" class="text-3xl font-bold text-slate-800 mb-3">산불</h3>
+                            <p id="resProbDesc" class="text-slate-600 text-base">설명</p>
                         </div>
                     </div>
 
                     <!-- Plus Sign -->
-                    <div class="text-4xl text-slate-300 font-black"><i class="fa-solid fa-plus"></i></div>
+                    <div class="text-5xl text-slate-300 font-black"><i class="fa-solid fa-plus"></i></div>
 
                     <!-- Selected Resources -->
-                    <div class="w-full md:w-2/3 flex flex-col sm:flex-row gap-4">
+                    <div class="w-full md:w-2/3 flex flex-col sm:flex-row gap-5">
                         <!-- Resource 1 -->
-                        <div class="flex-1 bg-green-50 border-t-8 border-green-500 rounded-2xl shadow-lg p-6 h-64 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                        <div class="flex-1 bg-green-50 border-t-8 border-green-500 rounded-2xl shadow-lg p-6 h-72 flex flex-col items-center justify-center text-center relative overflow-hidden">
                             <div class="absolute -right-4 -bottom-4 opacity-10 text-green-500 text-9xl">
                                 <i id="resRsc1IconLg" class="fa-solid fa-leaf"></i>
                             </div>
-                            <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">활용 자원 1</span>
-                            <i id="resRsc1Icon" class="fa-solid fa-drone text-5xl text-green-600 mb-4"></i>
-                            <h3 id="resRsc1Title" class="text-xl font-bold text-slate-800 mb-2">자원 1</h3>
-                            <p id="resRsc1Desc" class="text-slate-600 text-sm">설명</p>
+                            <span class="bg-green-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-5">활용 자원 1</span>
+                            <i id="resRsc1Icon" class="fa-solid fa-drone text-6xl text-green-600 mb-5"></i>
+                            <h3 id="resRsc1Title" class="text-2xl font-bold text-slate-800 mb-3">자원 1</h3>
+                            <p id="resRsc1Desc" class="text-slate-600 text-base">설명</p>
                         </div>
                         
                         <!-- Resource 2 -->
-                        <div class="flex-1 bg-green-50 border-t-8 border-green-500 rounded-2xl shadow-lg p-6 h-64 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                        <div class="flex-1 bg-green-50 border-t-8 border-green-500 rounded-2xl shadow-lg p-6 h-72 flex flex-col items-center justify-center text-center relative overflow-hidden">
                             <div class="absolute -right-4 -bottom-4 opacity-10 text-green-500 text-9xl">
                                 <i id="resRsc2IconLg" class="fa-solid fa-leaf"></i>
                             </div>
-                            <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">활용 자원 2</span>
-                            <i id="resRsc2Icon" class="fa-solid fa-tree text-5xl text-green-600 mb-4"></i>
-                            <h3 id="resRsc2Title" class="text-xl font-bold text-slate-800 mb-2">자원 2</h3>
-                            <p id="resRsc2Desc" class="text-slate-600 text-sm">설명</p>
+                            <span class="bg-green-500 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-5">활용 자원 2</span>
+                            <i id="resRsc2Icon" class="fa-solid fa-tree text-6xl text-green-600 mb-5"></i>
+                            <h3 id="resRsc2Title" class="text-2xl font-bold text-slate-800 mb-3">자원 2</h3>
+                            <p id="resRsc2Desc" class="text-slate-600 text-base">설명</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Story Area for Presentation -->
-                <div class="mt-8 bg-slate-50 border-2 border-dashed border-slate-300 rounded-2xl p-6 text-center">
-                    <h4 class="text-lg font-bold text-slate-700 mb-2"><i class="fa-regular fa-comment-dots mr-2"></i>우리 팀의 해결 스토리</h4>
-                    <p class="text-slate-400 italic">"선택한 자원을 조합하여 위기를 어떻게 극복할 것인지 팀원들과 이야기해 보세요."</p>
+                <div class="mt-10 bg-slate-50 border-2 border-dashed border-slate-300 rounded-2xl p-8 text-center">
+                    <h4 class="text-xl font-bold text-slate-700 mb-3"><i class="fa-regular fa-comment-dots mr-2"></i>우리 팀의 해결 스토리</h4>
+                    <p class="text-slate-500 text-lg italic leading-relaxed">"선택한 자원을 조합하여 위기를 어떻게 극복할 것인지 팀원들과 이야기해 보세요."</p>
                 </div>
             </div>
 
             <!-- Actions -->
-            <div class="p-6 bg-slate-50 flex justify-center gap-4 border-t border-slate-200">
-                <button onclick="goToStep(2)" class="bg-slate-200 text-slate-700 font-bold py-3 px-6 rounded-xl hover:bg-slate-300 transition">
+            <div class="p-8 bg-slate-50 flex justify-center gap-5 border-t border-slate-200">
+                <button onclick="goToStep(2)" class="bg-slate-200 text-slate-700 text-lg font-bold py-4 px-8 rounded-xl hover:bg-slate-300 transition">
                     <i class="fa-solid fa-rotate-left mr-2"></i> 다시 선택
                 </button>
-                <button onclick="downloadBoard()" class="bg-green-600 text-white font-bold py-3 px-8 rounded-xl hover:bg-green-700 transition shadow-lg shadow-green-200">
+                <button onclick="downloadBoard()" class="bg-green-600 text-white text-lg font-bold py-4 px-10 rounded-xl hover:bg-green-700 transition shadow-lg shadow-green-200">
                     <i class="fa-solid fa-download mr-2"></i> 이미지로 저장하기
                 </button>
             </div>
@@ -221,13 +221,13 @@
         function renderProblems() {
             const grid = document.getElementById('problemGrid');
             grid.innerHTML = problems.map(p => `
-                <div id="card-${p.id}" onclick="toggleProblem('${p.id}')" class="card-select bg-white border-2 border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center relative overflow-hidden h-40">
-                    <div class="absolute top-2 right-2 text-red-500 opacity-0 transition-opacity" id="check-${p.id}">
-                        <i class="fa-solid fa-circle-check text-xl"></i>
+                <div id="card-${p.id}" onclick="toggleProblem('${p.id}')" class="card-select bg-white border-2 border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center relative overflow-hidden h-44">
+                    <div class="absolute top-3 right-3 text-red-500 opacity-0 transition-opacity" id="check-${p.id}">
+                        <i class="fa-solid fa-circle-check text-2xl"></i>
                     </div>
-                    <i class="fa-solid ${p.icon} text-3xl text-red-400 mb-3"></i>
-                    <h4 class="font-bold text-slate-800 text-sm mb-1">${p.title}</h4>
-                    <p class="text-xs text-slate-500 leading-tight">${p.desc}</p>
+                    <i class="fa-solid ${p.icon} text-4xl text-red-400 mb-4"></i>
+                    <h4 class="font-bold text-slate-800 text-base md:text-lg mb-2">${p.title}</h4>
+                    <p class="text-sm text-slate-500 leading-snug">${p.desc}</p>
                 </div>
             `).join('');
         }
@@ -236,13 +236,13 @@
         function renderResources() {
             const grid = document.getElementById('resourceGrid');
             grid.innerHTML = resources.map(r => `
-                <div id="card-${r.id}" onclick="toggleResource('${r.id}')" class="card-select bg-white border-2 border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center relative overflow-hidden h-40">
-                    <div class="absolute top-2 right-2 text-green-500 opacity-0 transition-opacity" id="check-${r.id}">
-                        <i class="fa-solid fa-circle-check text-xl"></i>
+                <div id="card-${r.id}" onclick="toggleResource('${r.id}')" class="card-select bg-white border-2 border-slate-200 rounded-xl p-5 text-center flex flex-col items-center justify-center relative overflow-hidden h-44">
+                    <div class="absolute top-3 right-3 text-green-500 opacity-0 transition-opacity" id="check-${r.id}">
+                        <i class="fa-solid fa-circle-check text-2xl"></i>
                     </div>
-                    <i class="fa-solid ${r.icon} text-3xl text-green-500 mb-3"></i>
-                    <h4 class="font-bold text-slate-800 text-sm mb-1">${r.title}</h4>
-                    <p class="text-xs text-slate-500 leading-tight">${r.desc}</p>
+                    <i class="fa-solid ${r.icon} text-4xl text-green-500 mb-4"></i>
+                    <h4 class="font-bold text-slate-800 text-base md:text-lg mb-2">${r.title}</h4>
+                    <p class="text-sm text-slate-500 leading-snug">${r.desc}</p>
                 </div>
             `).join('');
         }
@@ -345,17 +345,17 @@
             // Map Data to UI
             document.getElementById('displayTeamName').innerText = teamName;
             
-            document.getElementById('resProbIcon').className = `fa-solid ${probData.icon} text-5xl text-red-500 mb-4`;
+            document.getElementById('resProbIcon').className = `fa-solid ${probData.icon} text-6xl text-red-500 mb-5`;
             document.getElementById('resProbIconLg').className = `fa-solid ${probData.icon}`;
             document.getElementById('resProbTitle').innerText = probData.title;
             document.getElementById('resProbDesc').innerText = probData.desc;
 
-            document.getElementById('resRsc1Icon').className = `fa-solid ${rsc1Data.icon} text-5xl text-green-600 mb-4`;
+            document.getElementById('resRsc1Icon').className = `fa-solid ${rsc1Data.icon} text-6xl text-green-600 mb-5`;
             document.getElementById('resRsc1IconLg').className = `fa-solid ${rsc1Data.icon}`;
             document.getElementById('resRsc1Title').innerText = rsc1Data.title;
             document.getElementById('resRsc1Desc').innerText = rsc1Data.desc;
 
-            document.getElementById('resRsc2Icon').className = `fa-solid ${rsc2Data.icon} text-5xl text-green-600 mb-4`;
+            document.getElementById('resRsc2Icon').className = `fa-solid ${rsc2Data.icon} text-6xl text-green-600 mb-5`;
             document.getElementById('resRsc2IconLg').className = `fa-solid ${rsc2Data.icon}`;
             document.getElementById('resRsc2Title').innerText = rsc2Data.title;
             document.getElementById('resRsc2Desc').innerText = rsc2Data.desc;
