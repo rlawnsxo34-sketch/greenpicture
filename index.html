@@ -12,7 +12,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
-        body { font-family: 'Noto Sans KR', sans-serif; background-color: #f0fdf4; } /* Soft green background */
+        
+        /* 단어 단위로 줄바꿈되도록 word-break: keep-all 추가 */
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            background-color: #f0fdf4; 
+            word-break: keep-all; 
+        } 
         
         /* Card Hover Effects */
         .card-select { transition: all 0.2s ease-in-out; cursor: pointer; }
